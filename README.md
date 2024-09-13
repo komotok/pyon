@@ -1,5 +1,5 @@
-# Bunny [![Discord](https://img.shields.io/discord/1196075698301968455?style=social&logo=discord&label=Pyoncord)](https://discord.gg/XjYgWXHb9Q)
-A mod for Discord's mobile apps, a fork of [Vendetta](https://github.com/vendetta-mod/Vendetta/).
+# Pyon [![Discord](https://img.shields.io/discord/1196075698301968455?style=social&logo=discord&label=Pyoncord)](https://discord.gg/XjYgWXHb9Q)
+A mod for Discord's mobile apps, a continuation of [Bunny]([https://github.com/pyoncord]).
 
 ## Installing
 
@@ -9,20 +9,20 @@ A mod for Discord's mobile apps, a fork of [Vendetta](https://github.com/vendett
 - **Non-root** - [BunnyManager](https://github.com/pyoncord/BunnyManager/releases/latest)
 
 ### iOS
-- [**BunnyTweak**](https://github.com/pyoncord/BunnyTweak) - Get prebuilt rootful and rootless `.deb` files or the prepatched `.ipa `
+- [**BunnyTweak**](https://github.com/pyoncord/BunnyTweak) - Get prebuilt rootful and rootless `.deb` files or the prepatched `.ipa ` - Pyon iOS builds have not yet been developed.
 
 ## Building
-1. Install a Bunny loader with loader config support (any mentioned in the [Installing](#installing) section).
+1. Install a Pyon loader with loader config support (any mentioned in the [Installing](#installing) section).
 1. Go to Settings > General and enable Developer Settings.
 1. Clone the repo:
     ```
-    git clone https://github.com/pyoncord/Bunny
+    git clone https://github.com/komotok/pyon
     ```
 1. Install dependencies:
     ```
     pnpm i
     ```
-1. Build Bunny's code:
+1. Build Pyon's code:
     ```
     pnpm build
     ```
