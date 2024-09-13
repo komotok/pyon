@@ -1,9 +1,9 @@
 {
-    "name": "bunny",
+    "name": "pyon",
     "private": true,
     "author": {
-        "name": "Pyoncord Team",
-        "url": "https://github.com/pyoncord"
+        "name": "Pyon Team",
+        "url": "https://github.com/komotok/pyon"
     },
     "scripts": {
         "build": "node scripts/build.mjs",
@@ -40,6 +40,7 @@
         "@types/react-native": "0.72.3",
         "es-toolkit": "^1.13.1",
         "fuzzysort": "^3.0.2",
+        "http-server": "^14.1.1",
         "intl-messageformat": "^10.5.14",
         "moment": "2.22.2",
         "react-native-reanimated": "^3.6.2",
