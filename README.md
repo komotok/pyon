@@ -32,3 +32,8 @@ A mod for Discord's mobile apps, a continuation of [Bunny]([https://github.com/p
 1. Make your changes, rebuild, reload, go wild!
 
 Alternatively, you can directly *serve* the bundled code by running `pnpm serve`. `bunny.js` will be served on your local address under the port 4040. You will then insert `http://<local ip address>:4040/bunny.js` as a custom url and reload. Whenever you restart your mobile client, the script will rebuild the bundle as your client fetches it.
+
+
+## Contributing
+
+Contributions to the project are both welcome and encouraged, but in absolutely no way mandatory. When contributing, please follow the Code of Conduct.
