@@ -17,7 +17,7 @@ jobs:
           - name: Checkout builds
             uses: actions/checkout@v4
             with:
-                repository: "pyoncord/bunny-builds"
+                repository: "bunny-mod/builds"
                 path: "builds"
                 token: ${{ secrets.BUILDS_TOKEN }}
                 ref: ${{ github.ref_name }}

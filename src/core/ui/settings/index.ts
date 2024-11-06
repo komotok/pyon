@@ -1,9 +1,9 @@
 import PyoncordIcon from "@assets/icons/pyoncord.png";
 import { Strings } from "@core/i18n";
+import { useProxy } from "@core/vendetta/storage";
 import { findAssetId } from "@lib/api/assets";
 import { isFontSupported, isThemeSupported } from "@lib/api/native/loader";
 import { settings } from "@lib/api/settings";
-import { useProxy } from "@lib/api/storage";
 import { registerSection } from "@ui/settings";
 import { version } from "bunny-build-info";
 
@@ -18,9 +18,7 @@ export default function initSettings() {
                 title: () => Strings.BUNNY,
                 icon: { uri: PyoncordIcon },
                 render: () => import("@core/ui/settings/pages/General"),
-                rawTabsConfig: {
-                    useTrailing: () => `(${version})`
-                }
+                useTrailing: () => `(${version})`
             },
             {
                 key: "BUNNY_PLUGINS",
