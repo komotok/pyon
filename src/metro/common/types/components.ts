@@ -133,6 +133,7 @@ interface FABProps {
     icon: ImageSourcePropType | ReactNode;
     style?: Style;
     onPress: () => void;
+    positionBottom?: number;
 }
 
 export type FloatingActionButton = React.FC<FABProps>;

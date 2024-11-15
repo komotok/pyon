@@ -20,7 +20,7 @@ export const CompatButton = findByPropsLazy("Looks", "Colors", "Sizes");
 export const HelpMessage = findByNameLazy("HelpMessage");
 
 // React Native's included SafeAreaView only adds padding on iOS.
-export const SafeAreaView = proxyLazy(() => findByProps("useSafeAreaInsets").SafeAreaView);
+export const { SafeAreaView, SafeAreaProvider, useSafeAreaInsets } = lazyDestructure(() => findByProps("useSafeAreaInsets"));
 
 // ActionSheet
 export const ActionSheetRow = findProp("ActionSheetRow");

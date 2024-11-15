@@ -7,7 +7,7 @@ import isValidHttpUrl from "@lib/utils/isValidHttpUrl";
 import { lazyDestructure } from "@lib/utils/lazy";
 import { findByProps } from "@metro";
 import { clipboard } from "@metro/common";
-import { Button, FlashList, FloatingActionButton, HelpMessage, IconButton, Stack, Text, TextInput } from "@metro/common/components";
+import { Button, FlashList, FloatingActionButton, HelpMessage, IconButton, Stack, Text, TextInput, useSafeAreaInsets } from "@metro/common/components";
 import { ErrorBoundary, Search } from "@ui/components";
 import fuzzysort from "fuzzysort";
 import { ComponentType, ReactNode, useCallback, useMemo } from "react";
@@ -111,6 +111,7 @@ export default function AddonPage<T extends object>({ CardComponent, ...props }:
 
     const [search, setSearch] = React.useState("");
     const [sortFn, setSortFn] = React.useState<((a: unknown, b: unknown) => number) | null>(() => null);
+    const { bottom: bottomInset } = useSafeAreaInsets();
 
     const results = useMemo(() => {
         let values = props.items;
@@ -198,6 +199,7 @@ export default function AddonPage<T extends object>({ CardComponent, ...props }:
                 renderItem={({ item }: any) => <CardComponent item={item.obj} result={item} />}
             />
             {props.installAction && <FloatingActionButton
+                positionBottom={bottomInset + 8}
                 icon={findAssetId("PlusLargeIcon")}
                 onPress={onInstallPress}
             />}
