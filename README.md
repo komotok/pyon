@@ -1,4 +1,4 @@
-Pyon [![Discord](https://img.shields.io/discord/1273043343445852161?style=social&logo=discord&label=Pyon)](https://discord.gg/8zTVECB6ga)
+Pyon [![Discord](https://img.shields.io/discord/1273043343445852161?style=social&logo=discord&label=Pyon)](https://discord.gg/d6gwJ5nquG)
 A mod for Discord's mobile apps, a continuation of [Bunny]([https://github.com/pyoncord]).
 
 ## Installing
