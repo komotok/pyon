@@ -43,7 +43,7 @@
         "fuzzysort": "^3.0.2",
         "http-server": "^14.1.1",
         "intl-messageformat": "^10.5.14",
-        "moment": "2.22.2",
+        "moment": "2.29.4",
         "react-native-reanimated": "^3.6.2",
         "spitroast": "^1.4.4",
         "type-fest": "^4.22.1"
