@@ -31,7 +31,8 @@ export default function ErrorBoundaryScreen(props: {
     const debugInfo = getDebugInfo();
 
     return <ErrorBoundary>
-        <SafeAreaProvider> {/* for iOS */}
+        {/* for iOS */}
+        <SafeAreaProvider>
             <SafeAreaView style={styles.container}>
                 <View style={{ gap: 4 }}>
                     <Text variant="display-lg">Uh oh.</Text>

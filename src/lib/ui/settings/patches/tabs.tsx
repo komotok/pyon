@@ -1,6 +1,7 @@
 import { after } from "@lib/api/patcher";
 import { findInReactTree } from "@lib/utils";
 import { i18n } from "@metro/common";
+import { TableRow } from "@metro/common/components";
 import { findByNameLazy, findByPropsLazy } from "@metro/wrappers";
 import { registeredSections } from "@ui/settings";
 
@@ -22,6 +23,7 @@ export function patchTabsUI(unpatches: (() => void | boolean)[]) {
                 type: "pressable",
                 title: row.title,
                 icon: row.icon,
+                IconComponent: () => <TableRow.Icon source={row.icon} />,
                 usePredicate: row.usePredicate,
                 useTrailing: row.useTrailing,
                 onPress: wrapOnPress(row.onPress, null, row.render, row.title()),
@@ -73,6 +75,7 @@ export function patchTabsUI(unpatches: (() => void | boolean)[]) {
         if (useIsFirstRender()) return; // :shrug:
 
         const { sections } = findInReactTree(ret, i => i.props?.sections).props;
+        // TODO: Use new i18n lib
         let index = -~sections.findIndex((i: any) => i.label === i18n.Messages.ACCOUNT_SETTINGS) || 1;
 
         Object.keys(registeredSections).forEach(sect => {
