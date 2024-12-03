@@ -5,11 +5,11 @@ A mod for Discord's mobile apps, a continuation of [Bunny]([https://github.com/p
 
 ### Android
 
-- **Root** with Xposed - [BunnyXposed](https://github.com/pyoncord/BunnyXposed/releases/latest)
-- **Non-root** - [BunnyManager](https://github.com/pyoncord/BunnyManager/releases/latest)
+- **Root** with Xposed - [PyonXposedF](https://github.com/pyoncord/BunnyXposed/releases/latest)
+- **Non-root** - [PyonManager](https://github.com/pyoncord/BunnyManager/releases/latest)
 
 ### iOS
-- [**BunnyTweak**](https://github.com/pyoncord/BunnyTweak) - Get prebuilt rootful and rootless `.deb` files or the prepatched `.ipa ` - Pyon iOS builds have not yet been developed.
+- [**BunnyTweak**](https://github.com/pyoncord/BunnyTweak) - Get prebuilt rootful and rootless `.deb` files or the prepatched `.ipa ` - Pyon iOS builds have not yet been developed, and Android is a priority.
 
 ## Building
 1. Install a Pyon loader with loader config support (any mentioned in the [Installing](#installing) section).
