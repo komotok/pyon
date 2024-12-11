@@ -18,7 +18,7 @@ export default defineCorePlugin({
         name: "Badges",
         version: "1.0.0",
         description: "Adds badges to user's profile",
-        authors: [{ name: "pylixonly" }]
+        authors: [{ name: "komotox", id: "520901379892576259" }]
     },
     start() {
         const propHolder = {} as Record<string, any>;
@@ -28,6 +28,7 @@ export default defineCorePlugin({
             if (ret.props.id.match(/bunny-\d+-\d+/)) {
                 Object.assign(ret.props, propHolder[ret.props.id]);
             }
+            return ret;
         });
 
         after("default", useBadgesModule, ([user], r) => {
