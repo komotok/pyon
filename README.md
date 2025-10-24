@@ -1,11 +1,11 @@
 > [!IMPORTANT]
-> ## Project Archival
+> ## Pyon Disclaimer
 > 
-> **This project is no longer actively maintained and this repository has been archived.**
->
-> We want to thank all contributors and users for their support over the project's lifetime. While development has ceased, the code remains available for those who may find it useful.
+> **The Bunny project was discontinued, therefore no further features will be directly carried over from any updates to their repository. This repository will continue development.**
 
-# Bunny [![Discord](https://img.shields.io/discord/1196075698301968455?style=social&logo=discord&label=Pyoncord)](https://discord.gg/XjYgWXHb9Q)
+
+
+# Pyon [![Discord](https://img.shields.io/discord/1196075698301968455?style=social&logo=discord&label=Pyon)](https://discord.gg/XjYgWXHb9Q)
 A mod for Discord's mobile apps.
 
 ## Installing
@@ -29,7 +29,7 @@ A mod for Discord's mobile apps.
     ```
     pnpm i
     ```
-1. Build Bunny's code:
+1. Build Pyon's code:
     ```
     pnpm build
     ```
